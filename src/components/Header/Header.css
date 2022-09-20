@@ -1,0 +1,79 @@
+
+.navigation {
+    height: 80px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0.5rem 0rem;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    margin-left: 265px;
+    
+  }
+  p{
+    color: red;
+    padding-top: 2px;
+    font-weight: bold;
+    font-size: small;
+  }
+  
+  /* .nav-menu {
+    margin-left: auto;
+    margin-left: 14rem;
+    
+  } */
+  .nav-menu ul {
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+    
+  }
+  .nav-menu li {
+    list-style-type: none;
+    margin-right: 10px;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+  }
+  .nav-menu li a {
+      text-decoration: none;
+    display: block;
+    width: 120%;
+
+    /* @media(max-width: 700px){.nav-menu li{
+      display: block;
+  }.nav-menu{
+      position: absolute; background: #33CC33;
+      height: 100vh; width: 200px; top: 0; right: -200px;
+      text-align: left; z-index: 2; transition: 1s;
+  }
+    
+  } */
+  
+    
+  }
+ .div-icon{
+    color: red;
+    margin-left: 100px;
+    
+
+ }
+ .log-drop{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+ }
+ .log-drop i{
+  margin-left: 2rem;
+  font-weight: bold;
+ }
+
+ .rounded-circle{
+ margin-left: 5rem;
+  height: 40px;
+ }
+
+ 

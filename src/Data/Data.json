@@ -1,0 +1,72 @@
+[
+{
+    "text":"Dashboard",
+    "href":"/",
+    "icon":"bi bi-speedometer"
+   
+},
+
+{
+    "text": "Workflow Request",
+   "href": "/workflow",
+    "icon":"bi bi-file-earmark-text",
+    
+    "children":[
+        {
+           "text":"Initiate Credit Request",
+           "href":"/initiatecredit",
+           "icon":"bi bi-dot"
+           
+        },
+        {
+           "text":"Initiate Expense Document",
+            "href":"/initiateexpense",
+            "icon":"bi bi-dot"
+            
+        },
+        {
+            "text":"Initiate Non-Expense Document",
+           "href":"/initiatenonexpense",
+            "icon":"bi bi-dot"
+            
+        }
+    ]
+},
+{
+    "text":"My Pending Reviews",
+    "href":"/pending",
+    "icon":"bi bi-file-earmark-ppt"
+},
+{
+    "text":"Reports",
+    "href":"/reports",
+    "icon":"bi bi-file-check"
+   
+},
+{
+    "text":"Admin Setup",
+    "href":"/admin",
+    "icon":"bi bi-gear",
+  
+    "children":[
+        {
+           "text":"Paul",
+           "href":"/paul",
+            "icon":"bi bi-dot"
+            
+        },
+        {
+            "text":"Sandra",
+           "href":"/sandra",
+           "icon":"bi bi-dot"
+           
+        },
+        {
+            "text":"Abiodun",
+            "href":"/abiodun",
+            "icon":"bi bi-dot"
+           
+        }
+    ]
+}
+]

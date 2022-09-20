@@ -1,0 +1,22 @@
+.Login{
+    margin-left: 8rem;
+    margin-top: 7rem;
+   
+}
+.form-group{
+    width: 22rem;
+    
+    
+}
+.login-img{
+    position: fixed;
+    background-image:
+    linear-gradient(30deg,
+      rgba(245,70,66, 0.75),
+      rgba(8,83,156, 0.75)), url('/src/images/himg3.jpeg');
+      width: 40%;
+      height:94vh;
+      text-align: center;
+      margin-left: 45rem;
+      margin-top: -650px;
+}
