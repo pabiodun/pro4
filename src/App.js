@@ -16,6 +16,7 @@ import Create from './components/Login/Create';
 import InitiateCr1 from './components/Pages/InitiateCr1';
 
 
+
 function App() {
   
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/login" element={<Login />} ></Route>
         <Route path="/create" element={<Create />} ></Route>
         <Route path="/initiatecr1" element={<InitiateCr1 />} ></Route>
+       
         
    </Routes>
   

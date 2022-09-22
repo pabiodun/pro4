@@ -152,7 +152,8 @@ function InitiateCr1() {
             <input name="current limit" style={{width:'120px'}}/>
           </label>
        </div>
-       <p style={{color:'black', fontSize:'12px', marginTop:'800px', marginLeft:'-120px'}}>COLLATERAL DETAILS</p>
+       <p style={{color:'black', fontSize:'12px', marginTop:'800px', marginLeft:'-120px'}}>
+        COLLATERAL</p><p style={{color:'black', fontSize:'12px', marginTop:'800px', marginLeft:'5px'}}> DETAILS</p>
        <div className='form-9'>
        <Form />
        </div>

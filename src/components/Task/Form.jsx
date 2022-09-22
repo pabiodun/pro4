@@ -5,13 +5,13 @@ import React from "react"
 
  	class Form extends React.Component {
     state = {
-    taskList: [{ index: Math.random(), projectName: "", task: "", taskNotes: "", taskStatus: "" }],
+    taskList: [{ index: Math.random(), category: "", type: "", OMV: "", FSV: "", taskStatus: "" }],
  	date: "",
  	description: "",
  	}
  	 
  	handleChange = (e) => {
- 	if (["projectName", "task", "taskNotes", "taskStatus"].includes(e.target.name)) {
+ 	if (["category", "type", "omv", "fsv", "taskStatus"].includes(e.target.name)) {
  	let taskList = [...this.state.taskList]
  	taskList[e.target.dataset.id][e.target.name] = e.target.value;
     } else {
@@ -20,7 +20,7 @@ import React from "react"
         }
         addNewRow = (e) => {
         this.setState((prevState) => ({
-        taskList: [...prevState.taskList, { index: Math.random(), projectName: "", task: "", taskNotes: "", taskStatus: "" }],
+        taskList: [...prevState.taskList, { index: Math.random(), category: "", type: "", OVM: "", FSV: "", taskStatus: "" }],
         }));
         }
          
@@ -32,32 +32,34 @@ import React from "react"
         // taskList1.splice(index, 1);
         // this.setState({ taskList: taskList1 });
         }
-        handleSubmit = (e) => {
-        e.preventDefault();
-        if(this.state.date==='' || this.state.description==='')
-        {
-        NotificationManager.warning("Please Fill up Required Field . Please check Task and Date Field");
-        return false;
-        }
-        for(var i=0;i<this.state.taskList.length;i++)
-        {
-        if(this.state.taskList[i].projectName==='' || this.state.taskList[i].task==='')
-        {
-        NotificationManager.warning("Please Fill up Required Field.Please Check Project name And Task Field");
-        return false;
-        }
-        }
-        let data = { formData: this.state, userData: localStorage.getItem('user') }
-        axios.defaults.headers.common["Authorization"] = localStorage.getItem('token');
-        axios.post("http://localhost:9000/api/task", data).then(res => {
-        if(res.data.success) NotificationManager.success(res.data.msg);
-        }).catch(error => {
-        if(error.response.status && error.response.status===400)
-        NotificationManager.error("Bad Request");
-        else NotificationManager.error("Something Went Wrong");
-        this.setState({ errors: error })
-        });
-        }
+
+        // ................below not now.....................
+        // handleSubmit = (e) => {
+        // e.preventDefault();
+        // if(this.state.date==='' || this.state.description==='')
+        // {
+        // NotificationManager.warning("Please Fill up Required Field . Please check Task and Date Field");
+        // return false;
+        // }
+        // for(var i=0;i<this.state.taskList.length;i++)
+        // {
+        // if(this.state.taskList[i].category==='' || this.state.taskList[i].task==='')
+        // {
+        // NotificationManager.warning("Please Fill up Required Field.Please Check Project name And Task Field");
+        // return false;
+        // }
+        // }
+        // let data = { formData: this.state, userData: localStorage.getItem('user') }
+        // axios.defaults.headers.common["Authorization"] = localStorage.getItem('token');
+        // axios.post("http://localhost:9000/api/task", data).then(res => {
+        // if(res.data.success) NotificationManager.success(res.data.msg);
+        // }).catch(error => {
+        // if(error.response.status && error.response.status===400)
+        // NotificationManager.error("Bad Request");
+        // else NotificationManager.error("Something Went Wrong");
+        // this.setState({ errors: error })
+        // });
+        // }
         clickOnDelete(record) {
         this.setState({
         taskList: this.state.taskList.filter(r => r !== record)
@@ -79,10 +81,11 @@ import React from "react"
         <table className="table">
         <thead>
         <tr>
-        <th className="required" >Project Name</th>
-        <th className="required" >Task</th>
-        <th>Notes</th>
-        <th>Status</th>
+        <th className="required" style={{fontSize: 12}}>Category</th>
+        <th className="required" style={{fontSize: 12}}>Type</th>
+        <th className="" style={{fontSize: 12}}>OMV (NGN)</th>
+        <th style={{fontSize: 12}}>FSV (NGN)</th>
+        <th style={{fontSize: 12}}>Status</th>
         </tr>
         </thead>
         <tbody>
