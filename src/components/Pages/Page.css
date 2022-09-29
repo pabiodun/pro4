@@ -9,10 +9,21 @@
     background-color: rgb(247, 245, 242);
     width: 73%;
     height: fit-content;
+    margin-right: 50px; 
+       
+  }
+
+  .dash-cont2{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 19rem;    
+    background-color: rgb(247, 245, 242);
+    width: 73%;
+    height: 135%;
     margin-right: 50px;
-    
-    
-   
+    margin-top: -110px;
   }
   .dash-main{
     margin-top: 8rem;    
@@ -80,6 +91,7 @@ option{
 .form-2{
   display: flex;
   margin-left: -725px;
+  
 }
 .form-3{
   margin-top: 180px;
@@ -120,7 +132,7 @@ option{
 .sup-doc{
   background-color: rgb(228, 233, 238);
   width: 45rem;
-  height: 65px;
+  height: 80px;
   margin-top: 320px;
   padding-top: 15px;
   padding-left: 20px;
@@ -135,5 +147,15 @@ option{
   margin-left: 3rem;
   display: flex;
   margin-bottom: 100px;
+  
+}
+.form-icrx2{
+  background-color: #fff;
+  height: 58rem;
+  width: 52rem;
+  margin-left: 3rem;
+  display: flex;
+  margin-bottom: 100px;
+  
 }
 

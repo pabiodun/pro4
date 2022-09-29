@@ -9,7 +9,10 @@ import logo1 from "../../images/logo1.png";
 
 
 function Header() {
-  
+  const handleClick=()=>{
+    localStorage.clear();
+    window.location.reload();
+  }
  
   return (
    
@@ -24,7 +27,7 @@ function Header() {
                 <Nav>                 
                     
                  <ul>
-                     <Link to='/branchcode' className='nav-link' style={{textDecoration:'none'}}><li>Branch Code:
+                     <Link to='/login' className='nav-link' style={{textDecoration:'none'}}><li>Branch Code:
                         <p>EUps</p>
                     </li></Link>
                        <Link to='/branchname' className='nav-link' style={{textDecoration:'none'}}> <li>Branch Name:
@@ -57,7 +60,7 @@ function Header() {
             <NavDropdown title={
         <span className="" style={{color:'#000000'}}>{'User Name'}</span>
     } >
-                <NavDropdown.Item className='log-drop'>
+                <NavDropdown.Item className='log-drop' onClick={handleClick}>
                     <i class="bi bi-box-arrow-right"></i>
                   Logout
                 </NavDropdown.Item>

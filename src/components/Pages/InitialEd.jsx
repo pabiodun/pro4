@@ -35,7 +35,7 @@ function InitialEd() {
           </label>
           </div>
          <div className='form-2'>
-          <label style={{marginLeft:'10px', marginTop:'100px'}}>
+          <label style={{marginLeft:'1px', marginTop:'100px'}}>
             <p style={{color:'black', fontSize:'10px'}}>Bank</p>
             
              <select name="Bank" style={{width:'180px', height:'28px'}}>
@@ -57,7 +57,7 @@ function InitialEd() {
           </label>
        </div>
        <div className='form-3'>
-       <label style={{marginLeft:'30px', marginTop:''}}>
+       <label style={{marginLeft:'25px', marginTop:''}}>
             <p style={{color:'black', fontSize:'10px'}}>Subtotal</p>
             <input name="Subtotal" style={{width:'180px'}}/>
           </label>
@@ -71,7 +71,7 @@ function InitialEd() {
           </label>
        </div>
        <div className='form-4'>
-          <label style={{marginLeft:'30px', marginTop:''}}>
+          <label style={{marginLeft:'-395px', marginTop:''}}>
             <p style={{color:'black', fontSize:'10px'}}>Reviewers</p>
             
              <select name="reviewers" style={{width:'180px', height:'28px'}}>
@@ -94,7 +94,7 @@ function InitialEd() {
        </div>
        
        <h6 style={{marginTop:'360px', marginLeft:'-725px', fontWeight:'bold', fontSize:'14px'}}>Supporting Documents</h6>
-       <div className='sup-doc' style={{marginLeft:'-155px'}}>
+       <div className='sup-doc' style={{marginLeft:'-155px', marginTop:'400px'}}>
           Document Name
           <input name="" style={{width:'14rem', marginLeft:'20px', height:'35px'}}/>
          <div style={{backgroundColor:'#fff', height:'35px', width:'13rem', marginLeft:'23rem', 
@@ -106,7 +106,7 @@ function InitialEd() {
           
          </div>
          <button style={{height:'40px', marginTop:'500px',
-          marginLeft:'-25rem', width:'150px', 
+          marginLeft:'-27rem', width:'150px', 
           borderRadius:'20px', backgroundColor:'red', 
           color:'#fff', borderColor:'red', 
           fontSize:'12px', fontWeight:'bold'}}>CREATE</button>

@@ -8,6 +8,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import TextField from '@mui/material/TextField';
 
 
 
@@ -17,6 +18,10 @@ function InitialCr() {
   const handleChange = (event) => {
     setAge(event.target.value);
   };
+  
+
+ 
+
   return (
     <div className="main">      
        <Sidebar />
@@ -26,13 +31,25 @@ function InitialCr() {
               <h6>INITIATE CREDIT REQUEST</h6>            
            </div>
        <div className='form-icr'>
-       <label style={{marginLeft:'50px', marginTop:'18px', justifyContent:'space-evenly'}}>
+       <p style={{color:'black', fontSize:'10px', marginLeft:'45px',  marginTop:'18px'}}>Request Number</p>
+       <FormControl sx={{ m: -10, minWidth: 150, mt: 5 }}  variant="outlined">
+       <TextField          
+          id=""
+          label="*"
+          defaultValue=""
+          size="small" 
+          height="20"
+          minWidth="100"
+        />
+        
+      </FormControl>
+       {/* <label style={{marginLeft:'50px', marginTop:'18px', justifyContent:'space-evenly'}}>
             <p style={{color:'black', fontSize:'10px'}}>Request Number</p>
             <input name="Request Number" style={{width:'180px', height:'35px'}}/>
-          </label>
+          </label> */}
 
-          <p style={{color:'black', fontSize:'10px', marginLeft:'25px', marginTop:'18px'}}>Request Type </p>
-      <FormControl sx={{ m: -8, minWidth: 180, mt: 6 }} size="small" height="20">
+          <p style={{color:'black', fontSize:'10px', marginLeft:'105px', marginTop:'18px'}}>Request Type </p>
+      <FormControl sx={{ m: -8, minWidth: 180, mt: 5 }} size="small" height="20">
         <InputLabel id="demo-simple-select-label" style={{}}></InputLabel>
         <Select
           labelId="demo-simple-select-label"

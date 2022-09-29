@@ -17,8 +17,6 @@ function Login() {
   const [userData, setUserData] = useState("")
 
 
-
-
   const location = useLocation();
 
   const pageLocation = location.pathname;
