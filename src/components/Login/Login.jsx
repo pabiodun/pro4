@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useHistory } from 'react'
 import Form from "react-bootstrap/Form"
 import logo1 from '../../images/logo1.png'
 import Button from "react-bootstrap/Button";
@@ -15,7 +15,12 @@ function Login() {
   })
 
   const [userData, setUserData] = useState("")
-
+//   const state = useState();
+// useState(() => {
+//   if (localStorage.getItem('user name')) {
+//     state.push('/')
+//   }
+// }, [])
 
   const location = useLocation();
 
@@ -61,6 +66,7 @@ function Login() {
 
   return (
     <div>
+      
       <img src={logo1}
         className="img"
         alt="avatar"

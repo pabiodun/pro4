@@ -4,9 +4,10 @@ export const ServiceApi = axios.create({
   baseURL: 'http://docflow-web.tk/api',
   headers: {
     'Content-Type': 'application/json',
-
-  }
-})
+'Accept': 'application/json'
+  },
+  
+});
 
 
 export const authorizeServiceApi = (token) => {
