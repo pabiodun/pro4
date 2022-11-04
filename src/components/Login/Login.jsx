@@ -10,17 +10,11 @@ import { useLocation, Navigate } from 'react-router-dom';
 
 function Login() {
   const [data, setData] = useState({
-    username: "",
+ username: "",
     password: "",
   })
 
   const [userData, setUserData] = useState("")
-//   const state = useState();
-// useState(() => {
-//   if (localStorage.getItem('user name')) {
-//     state.push('/')
-//   }
-// }, [])
 
   const location = useLocation();
 
@@ -73,6 +67,7 @@ function Login() {
         style={{ paddingTop: '8rem', marginLeft: '8rem' }}
       />
       <div className="Login">
+      {!show && (
         <Form onSubmit={handleSubmit} className='form-group'>
           <Form.Group size="lg" controlId="email" style={{ marginBottom: '20px', fontSize:'14px' }}>
 
@@ -129,7 +124,16 @@ function Login() {
             </Button>
           </Link>
         </Form>
+      )}
+      {msg && (
+        <Grid>
+          <Typography sx={{ color: "red", fontSize: "0.8em" }}>
+            {msg}
+          </Typography>
+        </Grid>
+      )}
 
+      {show && <HomePage userData={userData}   />}
       </div>
       <div className=''>
         <img src={ptbpaul}
@@ -138,6 +142,7 @@ function Login() {
           style={{ marginLeft: '45rem', marginTop: '-535px', height: '100vh' }}
         />
       </div>
+      
     </div>
   )
 }

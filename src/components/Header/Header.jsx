@@ -27,7 +27,7 @@ function Header() {
                 <Nav>                 
                     
                  <ul>
-                     <Link to='/login' className='nav-link' style={{textDecoration:'none'}}><li>Branch Code:
+                     <Link to='/login1' className='nav-link' style={{textDecoration:'none'}}><li>Branch Code:
                         <p>EUps</p>
                     </li></Link>
                        <Link to='/branchname' className='nav-link' style={{textDecoration:'none'}}> <li>Branch Name:

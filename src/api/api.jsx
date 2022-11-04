@@ -1,26 +1,33 @@
-import axios from 'axios'
+export const baseUrl = "https://instiqtme.tk:885/api";
 
-export const ServiceApi = axios.create({
-  baseURL: 'http://docflow-web.tk/api',
-  headers: {
-    'Content-Type': 'application/json',
-'Accept': 'application/json'
-  },
+
+export const Routes = {
+    Login: baseUrl + "/user/UserAccess/Authenticate"
+}
+
+// import axios from 'axios'
+
+// export const ServiceApi = axios.create({
+//   baseURL: 'http://docflow-web.tk/api',
+//   headers: {
+//     'Content-Type': 'application/json',
+// 'Accept': 'application/json'
+//   },
   
-});
+// });
 
 
-export const authorizeServiceApi = (token) => {
-  ServiceApi.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-};
+// export const authorizeServiceApi = (token) => {
+//   ServiceApi.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+// };
 
-export const unauthorizeServiceApi = () => {
-  ServiceApi.defaults.headers.common['Authorization'] = undefined;
-};
+// export const unauthorizeServiceApi = () => {
+//   ServiceApi.defaults.headers.common['Authorization'] = undefined;
+// };
 
 
-export const routes = {
-    userLogin : '/Home/Login',
+// export const routes = {
+//     userLogin : '/Home/Login',
 //     createUser : '/Home/CreateUser',
 //     userLogout : '/Home/Logout',
 //     createExpenseDocument : "/Documents/Create/ExpenseDocument",
@@ -38,4 +45,3 @@ export const routes = {
 //     getAllAwaitingReviews: "/Review/GetAwaitingReview",
 //     postReview: "/Approvals/ReviewDocument",
 //     getApprovalsAuditInfo: "Approvals/GetApproverAudit",
-}

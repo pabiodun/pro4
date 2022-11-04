@@ -11,7 +11,8 @@ import InitialNed from './components/Pages/InitialNed'
 import Reports from './components/Pages/Reports'
 import PendingReviews from './components/Pages/PendingReviews'
 import Paul from './components/Pages/Paul'
-import Login from './components/Login/Login';
+
+import Login1 from './components/Login/Login1';
 import Create from './components/Login/Create';
 import InitiateCr1 from './components/Pages/InitiateCr1';
 
@@ -33,7 +34,7 @@ function App() {
         <Route path="/pending" element={<PendingReviews />} ></Route>
         <Route path="/reports" element={<Reports />} ></Route>
         <Route path="/paul" element={<Paul />} ></Route>
-        <Route path="/login" element={<Login />} ></Route>
+        <Route path="/login1" element={<Login1 />} ></Route>
         <Route path="/create" element={<Create />} ></Route>
         <Route path="/initiatecr1" element={<InitiateCr1 />} ></Route>
        
